@@ -1,0 +1,19 @@
+/*
+ * Stylesheet of the example Lightning Web Component.
+ * It can define style properties which are scoped to this component.
+ */
+
+h2 {
+  /*
+   * Usage of Lightning Community Design Tokens, see
+   * https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.interop_components_css_aura
+   * https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/tokens_standard_communities.htm
+   */
+  color: var(--lwc-colorTextBrand, "red");
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 15px;
+}

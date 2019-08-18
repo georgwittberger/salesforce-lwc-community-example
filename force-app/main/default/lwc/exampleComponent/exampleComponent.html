@@ -1,0 +1,20 @@
+<template>
+  <!--
+    Template of the example Lightning Web Component.
+  -->
+  <div>
+    <h2>Example Component</h2>
+
+    <p>Value of the editor parameter: {editorParam}</p>
+
+    <p>Remote data retrieved from Apex controller:</p>
+    <template if:true={remoteData.data}>
+      <ul>
+        <template for:each={remoteData.data} for:item="entry">
+          <!-- Note that the properties "id" and "text" are defined in the Apex class "RemoteData". -->
+          <li key={entry.id}>{entry.text}</li>
+        </template>
+      </ul>
+    </template>
+  </div>
+</template>

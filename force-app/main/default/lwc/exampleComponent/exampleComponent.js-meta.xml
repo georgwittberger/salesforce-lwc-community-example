@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="exampleComponent">
+  <apiVersion>46.0</apiVersion>
+
+  <!-- Expose the component to be used in Lightning -->
+  <isExposed>true</isExposed>
+
+  <!-- Display name of the component in the Community Builder -->
+  <masterLabel>Example Component</masterLabel>
+
+  <!-- Targets required to make the component available in Community Builder -->
+  <targets>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
+  </targets>
+
+  <!--
+    Configuration of the editable parameters of the component
+    See https://developer.salesforce.com/docs/component-library/documentation/lwc/lwc.reference_configuration_tags
+  -->
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Default">
+      <property name="editorParam" type="String" label="Editor Parameter"
+        description="Enter text to be displayed by the component." default="Example text" />
+      <property name="remoteParam" type="String" label="Remote Parameter"
+        description="Enter value to be sent to Apex controller." default="Special" />
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
