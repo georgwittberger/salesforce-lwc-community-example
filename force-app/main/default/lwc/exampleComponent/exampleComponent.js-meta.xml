@@ -24,6 +24,8 @@
         description="Enter text to be displayed by the component." default="Example text" />
       <property name="remoteParam" type="String" label="Remote Parameter"
         description="Enter value to be sent to Apex controller." default="Special" />
+      <property name="libraryParam" type="String" label="Library Parameter"
+        description="Enter value to be passed to shared library." default="Example Input" />
     </targetConfig>
   </targetConfigs>
 </LightningComponentBundle>

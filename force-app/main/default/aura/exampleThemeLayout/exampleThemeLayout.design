@@ -1,0 +1,3 @@
+<design:component label="Example Theme Layout">
+  <design:attribute name="configValue" label="Configuration Value" />
+</design:component>

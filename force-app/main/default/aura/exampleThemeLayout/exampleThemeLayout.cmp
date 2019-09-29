@@ -1,0 +1,6 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="Example Theme Layout">
+  <aura:attribute name="configValue" type="String" required="true" default="My Config" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <ltng:require scripts="{!$Resource.InternalLibrary + '/exampleInternalLibrary.js'}" afterScriptsLoaded="{!c.afterScriptsLoaded}" />
+  {!v.body}
+</aura:component>
